@@ -1,0 +1,21 @@
+<div class="container">
+    <h2 align="center">Update Product</h2>
+
+<form (ngSubmit)="updateProvider()" style="width: 1000px;">
+    <div class="form-group">
+        <label for="providerName"><strong>Product title</strong></label>
+        <input [(ngModel)]="title" name="providerName" size="20" type="text" class="form-control" id="title" />
+    </div>
+    <div class="form-group">
+        <label for="providerEmail"><strong>Product price</strong></label>
+        <input [(ngModel)]="price" name="providerEmail" size="20" type="number" class="form-control" id="price" />
+    </div>
+    <div class="form-group">
+        <label for="providerAdress"><strong>Product image</strong></label>
+        <input [(ngModel)]="image" name="providerAdress" size="20" type="text" class="form-control" id="image" />
+    </div>
+    <input [(ngModel)]="id" name="providerId" type="hidden" />
+    <br>
+    <button class="btn btn-primary">Update</button>
+</form>
+</div>
